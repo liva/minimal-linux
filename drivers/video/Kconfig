@@ -1,0 +1,28 @@
+#
+# Video configuration
+#
+
+menu "Graphics support"
+	depends on HAS_IOMEM
+
+config HAVE_FB_ATMEL
+	bool
+
+config SH_LCD_MIPI_DSI
+	bool
+
+config VGASTATE
+       tristate
+       default n
+
+config VIDEOMODE_HELPERS
+	bool
+
+config HDMI
+	bool
+
+if VT
+	source "drivers/video/console/Kconfig"
+endif
+
+endmenu
