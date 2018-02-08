@@ -6,7 +6,7 @@ This is the stripped version of linux kernel for learning.
 
 Features are
 * fast compilation (only takes 20 seconds on Xeon E3-1275 v5 @ 3.60GHz)
-* less source files (1024 .c files)
+* less source files (almost 900 .c files)
 
 Limitations are
 * only works on x86_64 QEMU
