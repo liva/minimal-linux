@@ -31,6 +31,7 @@ $ make menuconfig
 Busybox Settings ---> Build Options --->Build BusyBox as a static binary (no shared libs)
 $ make -j8
 $ make install
+$ mv _install ../rootfs
 $ cd ../rootfs
 $ find . | cpio -o --format=newc > ../rootfs.img
 $ cd ..
