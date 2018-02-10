@@ -20,4 +20,3 @@ obj-$(CONFIG_RTC_LIB)		+= rtc/
 ifndef CONFIG_ARCH_USES_GETTIMEOFFSET
 obj-y				+= clocksource/
 endif
-obj-$(CONFIG_HID)		+= hid/

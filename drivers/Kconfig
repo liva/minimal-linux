@@ -11,8 +11,6 @@ source "drivers/char/Kconfig"
 
 source "drivers/video/Kconfig"
 
-source "drivers/hid/Kconfig"
-
 source "drivers/rtc/Kconfig"
 
 source "drivers/clocksource/Kconfig"
