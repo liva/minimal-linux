@@ -42,3 +42,12 @@ qemu-system-x86_64 -kernel arch/x86/boot/bzImage -initrd (project_root)/rootfs.i
 ```
 
 You must switch to the serial console monitor with Ctrl+Alt+3.
+
+## to use procfs and sysfs
+Run these commands in the busybox shell.
+
+```
+# mkdir /proc /sys
+# mount -t proc none /proc
+# mount -t sysfs none /sys
+```
