@@ -20,8 +20,6 @@ Use 'minimalconfig' for configuration. DO NOT GENERATE '.config' FROM 'make' COM
 $ cp minimalconfig .config
 $ make -j8 bzImage
 ```
-You can use 'sysprocconfig' instead if you want to enable procfs & kernfs. (thanks @ken3)
-
 ## make rootfs
 ```
 $ cd (project_root)
