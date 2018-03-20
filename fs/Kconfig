@@ -99,6 +99,10 @@ endif # BLOCK
 
 menu "Pseudo filesystems"
 
+source "fs/proc/Kconfig"
+source "fs/kernfs/Kconfig"
+source "fs/sysfs/Kconfig"
+
 config TMPFS
 	bool "Tmpfs virtual memory file system support (former shm fs)"
 	depends on SHMEM
@@ -165,6 +169,8 @@ config HUGETLB_PAGE
 
 config ARCH_HAS_GIGANTIC_PAGE
 	bool
+
+source "fs/configfs/Kconfig"
 
 endmenu
 
